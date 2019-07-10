@@ -84,6 +84,9 @@ const ShowCaseStyle = styled.header`
     padding: 1.5rem 2.1rem;
     text-transfrom: uppercase;
   }
+  .btn-icon {
+    padding-left:3px;
+  }
 `;
 
 const Header = () => {
@@ -104,7 +107,7 @@ const Header = () => {
         <h1>See what's next</h1>
         <p>Watch anywhere. Cancel anytime</p>
         <div className="btn btn-xl" onClick={() => console.log("clicked")}>
-          Watch Free For 30 Days
+          Watch Free For 30 Days 
           <FontAwesomeIcon icon={faChevronRight} className="btn-icon" />
         </div>
       </div>

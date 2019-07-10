@@ -17,6 +17,11 @@ const ButtonWrapper = styled.div`
     opacity: 0.9;
   }
   border-radius: ${props => props.borderRadios || '0px'};
+  .Button-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+  }
 `;
 
 const Button = ({ children, onclick, styles,borderRadios }) => {
