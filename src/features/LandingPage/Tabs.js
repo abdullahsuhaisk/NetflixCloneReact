@@ -51,6 +51,7 @@ const TabsWrapper = styled.section`
 `;
 
 const Tabs = ({ setTabsRender, whichTabsRender }) => {
+  
   const classNameTab1 = whichTabsRender === "TabsItem1" ? "tab-border" : null;
   const classNameTab2 = whichTabsRender === "TabsItem2" ? "tab-border" : null;
   const classNameTab3 = whichTabsRender === "TabsItem3" ? "tab-border" : null;

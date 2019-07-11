@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import Button from "../../components/Buttons/Button";
+import { Button } from "../../components/Buttons/Button";
 
 const ShowCaseStyle = styled.header`
   width: 100%;

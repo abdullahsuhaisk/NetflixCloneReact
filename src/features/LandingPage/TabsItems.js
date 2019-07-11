@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faCheck } from "@fortawesome/free-solid-svg-icons";
 
-import Button from "../../components/Buttons/Button";
+import {Button, LargeButton} from "../../components/Buttons/Button";
 
 const TabsItemWrapper = styled.div`
   max-width: 70%;
@@ -72,6 +72,9 @@ const TabsItemWrapper = styled.div`
   .table tbody tr:nth-child(odd) {
     background: #222;
   }
+  .text-center {
+    text-align: center;
+  }
 `;
 
 export const TabsItem1 = () => {
@@ -84,7 +87,7 @@ export const TabsItem1 = () => {
             If you decide Netflix isn't for you - no problem. No commitment.
             Cancel online anytime.
           </p>
-          <Button className="button">Watch Free For 30 days </Button>
+          <LargeButton className="button">Watch Free For 30 days </LargeButton>
         </div>
         <img src="/image//tab-content-1.png" alt="acdsf" />
       </div>
@@ -99,7 +102,7 @@ export const TabsItem2 = () => {
         <p class="text-lg">
           Watch TV shows and movies anytime, anywhere — personalized for you.
         </p>
-        <Button className="button">Watch Free For 30 days </Button>
+        <LargeButton className="button">Watch Free For 30 days </LargeButton>
       </div>
       <div class="tab-2-content-bottom">
         <div>
@@ -130,12 +133,12 @@ export const TabsItem3 = () => {
   return (
     // tab-content-item show
     <TabsItemWrapper>
-      <div id="tab-3-content" class="tab-content-item">
+      <div class="tab-content-item">
         <div class="text-center">
           <p class="text-lg">
             Choose one plan and watch everything on Netflix.
           </p>
-          <Button className="button">Watch Free For 30 days </Button>
+          <LargeButton className="button">Watch Free For 30 days </LargeButton>
         </div>
         <table class="table">
           <thead>
