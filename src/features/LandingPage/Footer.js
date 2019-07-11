@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 const Wrapper = styled.footer`
@@ -42,61 +43,61 @@ const Footer = () => {
       <div class="footer-cols">
         <ul>
           <li>
-            <a href="#">FAQ</a>
+            <Link to="/">FAQ </Link>
           </li>
           <li>
-            <a href="#">Investor Relations</a>
+            <Link to="/">Investor Relations </Link>
           </li>
           <li>
-            <a href="#">Ways To Watch</a>
+            <Link to="/">Ways To Watch </Link>
           </li>
           <li>
-            <a href="#">Corporate Information</a>
+            <Link to="/">Corporate Information </Link>
           </li>
           <li>
-            <a href="#">Netflix Originals</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Help Center</a>
-          </li>
-          <li>
-            <a href="#">Jobs</a>
-          </li>
-          <li>
-            <a href="#">Terms Of Use</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <Link to="/">Netflix Originals </Link>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#">Account</a>
+            <Link to="/">Help Center </Link>
           </li>
           <li>
-            <a href="#">Redeem Gift Cards</a>
+            <Link to="/">Jobs </Link>
           </li>
           <li>
-            <a href="#">Privacy</a>
+            <Link to="/">Terms Of Use </Link>
           </li>
           <li>
-            <a href="#">Speed Test</a>
+            <Link to="/">Contact Us </Link>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#">Media Center</a>
+            <Link to="/">Account </Link>
           </li>
           <li>
-            <a href="#">Buy Gift Cards</a>
+            <Link to="/">Redeem Gift Cards </Link>
           </li>
           <li>
-            <a href="#">Cookie Preferences</a>
+            <Link to="/">Privacy </Link>
           </li>
           <li>
-            <a href="#">Legal Notices</a>
+            <Link to="/">Speed Test </Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/">Media Center </Link>
+          </li>
+          <li>
+            <Link to="/">Buy Gift Cards </Link>
+          </li>
+          <li>
+            <Link to="/">Cookie Preferences </Link>
+          </li>
+          <li>
+            <Link to="/">Legal Notices </Link>
           </li>
         </ul>
       </div>

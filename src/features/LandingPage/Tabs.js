@@ -50,11 +50,18 @@ const TabsWrapper = styled.section`
   }
 `;
 
-const Tabs = () => {
+const Tabs = ({ setTabsRender, whichTabsRender }) => {
+  const classNameTab1 = whichTabsRender === "TabsItem1" ? "tab-border" : null;
+  const classNameTab2 = whichTabsRender === "TabsItem2" ? "tab-border" : null;
+  const classNameTab3 = whichTabsRender === "TabsItem3" ? "tab-border" : null;
+
   return (
     <TabsWrapper>
       <div className="container">
-        <div className="tab-item tab-border">
+        <div
+          className={`tab-item ${classNameTab1}`}
+          onClick={() => setTabsRender("TabsItem1")}
+        >
           <FontAwesomeIcon
             icon={faDoorOpen}
             className="btn-icon"
@@ -62,7 +69,10 @@ const Tabs = () => {
           />
           <p className="hide-smA">Cancel at any time</p>
         </div>
-        <div className="tab-item tab-border">
+        <div
+          className={`tab-item ${classNameTab2}`}
+          onClick={() => setTabsRender("TabsItem2")}
+        >
           <FontAwesomeIcon
             icon={faTablet}
             className="btn-icon"
@@ -70,7 +80,10 @@ const Tabs = () => {
           />
           <p className="hide-smA">Watch anywhere</p>
         </div>
-        <div className="tab-item tab-border">
+        <div
+          className={`tab-item ${classNameTab3}`}
+          onClick={() => setTabsRender("TabsItem3")}
+        >
           <FontAwesomeIcon
             icon={faTags}
             className="btn-icon"
